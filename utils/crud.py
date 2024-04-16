@@ -10,9 +10,15 @@ def add_user(lista: list) -> None:
     new_user = {"name": imie, "surname": nazwisko, "posts": liczba_postow, }
     lista.append(new_user)
 
-    ef
-    search_user(users: list):
+
+def search_user(users: list):
     imie = input("Podaj imię: ")
     for user in users:
         if user["name"] == imie:
             print(user)
+
+def remove_user(users: list):
+    imie = input("Podaj imię: ")
+    for user in users:
+        if user["name"] == imie:
+            users.remove(user)
